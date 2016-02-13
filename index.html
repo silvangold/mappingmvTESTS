@@ -63,14 +63,11 @@ var layers = document.getElementById('menu-ui');
 addLayer(L.mapbox.tileLayer('mapbox.outdoors'), 'Outdoors', 1);
 addLayer(L.mapbox.tileLayer('silvani1.5iiry8wl'), 'Bullshit', 2);
 
-var layer = L.mapbox.tileLayer('silvani1.5iiry8wl')
+var layer = L.mapbox.tileLayer('silvani1.5iiry8wl').addTo(map);
     // since layers load asynchronously through AJAX, use the
     // `.on` function to listen for them to be loaded before
     // calling `getTileJSON()`
-    .on('ready', function() {
-        // get TileJSON data from the loaded layer
-        var TileJSON = layer.getTileJSON(silvani1.5iiry8wl);
-    });
+
     
 function addLayer(layer, name, zIndex) {
     layer
