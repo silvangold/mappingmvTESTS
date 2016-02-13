@@ -62,11 +62,6 @@ var map = L.mapbox.map('map').setView([40.374025, -90.089398], 20);
 var layers = document.getElementById('menu-ui');
 addLayer(L.mapbox.tileLayer('mapbox.outdoors'), 'Outdoors', 1);
 addLayer(L.mapbox.tileLayer('silvani1.d73fi55j'), 'DAMNIT', 2);
-    
-    map.eachLayer(function(l) {
-  // Each layer object is passed in order.
-  // The callback function calls a, b, then c
-});
 
 function addLayer(layer, name, zIndex) {
     layer
