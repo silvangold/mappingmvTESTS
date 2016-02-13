@@ -61,7 +61,12 @@ L.mapbox.accessToken = 'pk.eyJ1Ijoic2lsdmFuaTEiLCJhIjoiY2loODFpcG42MHJqaXVla3R1M
 var map = L.mapbox.map('map').setView([40.374025, -90.089398], 20);
 var layers = document.getElementById('menu-ui');
 addLayer(L.mapbox.tileLayer('mapbox.outdoors'), 'Outdoors', 1);
-addLayer(L.mapbox.tileLayer('silvani1.5iiry8wl'), 'Bullshit', 2);
+
+var layer = L.mapbox.tileLayer('silvani1.d73fi55j'), 'DAMNIT', 2;
+layer.on('ready', function() {
+  // the layer has been fully loaded now, and you can
+  // call .getTileJSON and investigate its properties
+});
     
 function addLayer(layer, name, zIndex) {
     layer
