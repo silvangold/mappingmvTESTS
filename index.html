@@ -70,37 +70,9 @@ var layers = document.getElementById('menu-ui');
 addLayer(L.mapbox.tileLayer('mapbox.outdoors'), 'Outdoors', 1);
 addLayer(L.mapbox.tileLayer('silvani1.b04n70x2'), '1980s Structures', 2);
 addLayer(L.mapbox.tileLayer('silvani1.54qxi7sa'), '2008', 3);
-var layerGroup = L.layerGroup('1980s').addTo(map);
-    L.mapbox.tileLayer('silvani1.axichdj2').addTo(layerGroup);
-    L.mapbox.tileLayer('silvani1.20ovobcg').addTo(layerGroup);
-    
-var layerGroup = L.layerGroup('2008').addTo(map);
-    L.mapbox.tileLayer('silvani1.54qxi7sa').addTo(layerGroup);
-    L.mapbox.tileLayer('silvani1.9vu83fuw').addTo(layerGroup);
-    
-var layerGroup = L.layerGroup('2009').addTo(map);
-    L.mapbox.tileLayer('silvani1.96nq3gal').addTo(layerGroup);
-    L.mapbox.tileLayer('silvani1.6qmyeoud').addTo(layerGroup);
-    
-var layerGroup = L.layerGroup('2010').addTo(map);
-    L.mapbox.tileLayer('silvani1.206s0d5u').addTo(layerGroup);
-    L.mapbox.tileLayer('silvani1.35xnfso7').addTo(layerGroup);
-    
-var layerGroup = L.layerGroup('2011').addTo(map);
-    L.mapbox.tileLayer('silvani1.3y7o06zv').addTo(layerGroup);
-    L.mapbox.tileLayer('silvani1.71ao34yb').addTo(layerGroup);
-    
-var layerGroup = L.layerGroup('2012').addTo(map);
-    L.mapbox.tileLayer('silvani1.cjhcozwm').addTo(layerGroup);
-    L.mapbox.tileLayer('silvani1.4jniz531').addTo(layerGroup);
-    
-var layerGroup = L.layerGroup('2013').addTo(map);
-    L.mapbox.tileLayer('silvani1.697ah7oq').addTo(layerGroup);
-    L.mapbox.tileLayer('silvani1.dcxen1yw').addTo(layerGroup);
-    
-var layerGroup = L.layerGroup('2014').addTo(map);
-    L.mapbox.tileLayer('silvani1.7reewhj7').addTo(layerGroup);
-    L.mapbox.tileLayer('silvani1.47kqci1o').addTo(layerGroup);
+
+// The data tiles won't appear on the map, however the 'mapbox.outdoors' does appear.
+
 function addLayer(layer, name, zIndex) {
     layer
         .setZIndex(zIndex)
