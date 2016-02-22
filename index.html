@@ -68,7 +68,7 @@ L.mapbox.accessToken = 'pk.eyJ1Ijoic2lsdmFuaTEiLCJhIjoiY2loODFpcG42MHJqaXVla3R1M
 var map = L.mapbox.map('map').setView([40.374025, -90.089398], 20);
 var layers = document.getElementById('menu-ui');
 addLayer(L.mapbox.tileLayer('mapbox.outdoors'), 'Outdoors', 1);
-addLayer(L.mapbox.tileLayer('silvani1.b04n70x2'), '1980s Structures', 2);
+addLayer(L.mapbox.tileLayer('mapbox://styles/silvani1/ciky6i31f00hy93kp5dnpk2w9'), '1980s Structures', 2);
 addLayer(L.mapbox.tileLayer('silvani1.54qxi7sa'), '2008', 3);
 
 // The data tiles won't appear on the map, however the 'mapbox.outdoors' does appear.
